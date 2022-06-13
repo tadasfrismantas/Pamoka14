@@ -1,0 +1,45 @@
+h1 {
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+header {
+  text-align: center;
+  width: 100vw;
+  background-color: blueviolet;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+a {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.banner {
+  height: 100px;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px;
+}
+
+@media only screen and (min-width: 700px) {
+  .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
